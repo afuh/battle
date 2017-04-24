@@ -16,7 +16,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: "/"
   },
   module: {
     rules: [
@@ -43,7 +44,8 @@ module.exports = {
     open: false,
     overlay: true,
     port: 3000,
-    hot: true
+    hot: true,
+    historyApiFallback: true
   },
   plugins: [
     new HtmlWebpackPlugin({
