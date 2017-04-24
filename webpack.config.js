@@ -13,7 +13,7 @@ const cssProd = ExtractTextPlugin.extract({
 
 
 module.exports = {
-  entry: './src/main.js',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: 'bundle.js'
@@ -23,8 +23,7 @@ module.exports = {
       {
           test: /\.jsx?$/,
           loader: 'babel-loader',
-          exclude: /node_modules/,
-          options: { presets: ['es2015', 'react'] }
+          exclude: /node_modules/
       },
       {
         test: /\.(s+(a|c)ss|css)$/,
@@ -44,11 +43,11 @@ module.exports = {
     open: false,
     overlay: true,
     port: 3000,
-    hot: false
+    hot: true
   },
   plugins: [
     new HtmlWebpackPlugin({
-        title: 'Nuevo Proyecto',
+        title: 'Github Battle',
         minify: {
             collapseWhitespace: true
         },
