@@ -4,11 +4,12 @@ import PropTypes from "prop-types";
 
 import { Link } from 'react-router-dom';
 import { battle } from "../utils/api";
-import PlayerPreview from "./PlayerPreview"
+import PlayerPreview from "./PlayerPreview";
+import Loading from "./Loading";
 
 const Profile = (props) => {
   const info = props.info;
-  
+
   return (
     <PlayerPreview avatar={info.avatar_url} username={info.login}>
       <ul className='space-list-items'>
@@ -87,7 +88,7 @@ class Resuls extends React.Component {
     const loading = this.state.loading;
 
     if (loading)  {
-      return <p>Loading</p>;
+      return <Loading />;
     }
     if (error) {
       return (
