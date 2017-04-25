@@ -55,7 +55,7 @@ module.exports = {
         },
         hash: true,
         template: './src/index.html',
-        // filename: isProd ? './../index.html' : 'index.html'
+        filename: "200.html" //surge.sh
       }),
       new ExtractTextPlugin({
          filename: 'main.css',

@@ -1,2 +1,3 @@
 # GitHub Battle
-From [React Fundamentals](https://reacttraining.com/online/react-fundamentals) by Tyler McGinnis.
+
+This is my **[GitHub Battle](faded-bun.surge.sh)** App that I made following the awesome course [React Fundamentals](https://reacttraining.com/online/react-fundamentals) by Tyler McGinnis.
